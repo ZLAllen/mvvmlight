@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="65814B27-ACAA-47AD-9F20-C95019F9A60F" Version="5.4.1.0" Language="en-US" Publisher="Laurent Bugnion (GalaSoft)" />
+        <DisplayName>MVVM Light for VS2022</DisplayName>
+        <Description xml:space="preserve">The MVVM Light Toolkit is a set of components helping people to get started in the Model - View - ViewModel pattern in Windows 10, WPF, Xamarin.Android, Xamarin.iOS and Xamarin.Forms. It is a light and pragmatic framework that contains only the essential components needed.</Description>
+        <MoreInfo>http://www.mvvmlight.net</MoreInfo>
+        <License>License.rtf</License>
+        <GettingStartedGuide>http://www.mvvmlight.net/doc</GettingStartedGuide>
+        <ReleaseNotes>http://www.mvvmlight.net/installing/changes</ReleaseNotes>
+        <Icon>Icon Purple 100x100.png</Icon>
+        <PreviewImage>MvvmLight.png</PreviewImage>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0,18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Pro">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Community">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Pro">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.7.2,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" Path="MvvmLightCSharpSnippets\MvvmLightCSharpSnippets.pkgdef" />
+        <Asset Type="Microsoft.VisualStudio.VsPackage" Path="MvvmLightVbSnippets\MvvmLightVbSnippets.pkgdef" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Mvvm.WPF472.zip" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.Net.ComponentGroup.DevelopmentPrerequisites" Version="[17.8.34129.139,18.0)" DisplayName=".NET Framework 4.7.2 development tools" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.8.34129.139,18.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>
